@@ -1,0 +1,35 @@
+{
+    "version": "1.0.0-*",
+    "description": "ConsoleApp1 Console Application",
+    "authors": [ "admin" ],
+    "tags": [ "" ],
+    "projectUrl": "",
+    "licenseUrl": "",
+
+    "dependencies": {
+    },
+
+    "commands": {
+        "ConsoleApp1": "ConsoleApp1"
+    },
+
+    "frameworks": {
+        "dnx451": {
+            "frameworkAssemblies": {
+                "System.Net.Http": "4.0.0.0",
+                "System.Web.Extensions": "4.0.0.0",
+                "System.Web": "4.0.0.0",
+                "System.Net.Http.WebRequest": "4.0.0.0"
+            }
+        },
+        "dnxcore50": {
+            "dependencies": {
+                "System.Collections": "4.0.10-beta-23019",
+                "System.Console": "4.0.0-beta-23019",
+                "System.Linq": "4.0.0-beta-23019",
+                "System.Threading": "4.0.10-beta-23019",
+                "Microsoft.CSharp": "4.0.0-beta-23019"
+            }
+        }
+    }
+}

@@ -1,0 +1,32 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div id="DataForm">
+    <input type="button" onclick="AllCreditDetails();" value="ClickMe" />
+
+</div>
+<script type="text/javascript">
+
+
+    function AllCreditDetails() {
+        $.ajax({
+            type: "GET",
+            url: "http://localhost:53832/HOSTAPI/api/credit/197104", //URI   
+
+            dataType: "json",
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                
+                alert(data);
+
+            },
+            error: function (data, status, jqXHR) {
+                alert(data);
+                alert(status);
+                alert(jqXHR);
+            }
+        });
+    }
+</script>
+
